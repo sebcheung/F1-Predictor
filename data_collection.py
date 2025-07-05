@@ -121,11 +121,11 @@ class F1DataCollector:
         url = f"{self.base_url}/{year}/driverstandings.json"
         try:
             response = self.session.get(url)
-            response.raise_for_status
-            data = response.json
+            response.raise_for_status()
+            data = response.json()
 
             standings = []
-            for standing in data['MRData']['StandingsTable']['StandingLists'][0]['DriverStandings']:
+            for standing in data['MRData']['StandingsTable']['StandingsLists'][0]['DriverStandings']:
                 standing_info = {
                     'year': year,
                     'driver_id': standing['Driver']['driverId'],
@@ -204,7 +204,7 @@ class F1DataCollector:
                     logger.info(f"Collecting race {round_num}: {race['race_name']}")
 
                     # Qualifying results
-                    qualifying = self.get_qualifying_results(year, round)
+                    qualifying = self.get_qualifying_results(year, round_num)
                     if not qualifying.empty:
                         all_data['qualifying_results'].append(qualifying)
 
@@ -214,7 +214,7 @@ class F1DataCollector:
                         all_data['race_results'].append(results)
 
                     # Rate limiting to cool off API
-                    time.sleep(0.5)
+                    time.sleep(5)
 
             # Combine all dataframes
             final_data = {}
@@ -224,7 +224,7 @@ class F1DataCollector:
                     logger.info(f"Combined {key}: {len(final_data[key])} records")
                 else:
                     final_data[key] = pd.DataFrame()
-            return final_data
+        return final_data
         
     # Save collected data into a CSV file(s)
     def save_data(self, data: Dict[str, pd.DataFrame], base_path: str = "data"):
