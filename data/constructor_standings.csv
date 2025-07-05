@@ -1,0 +1,41 @@
+year,constructor_id,constructor_name,position,points,wins
+2022,red_bull,Red Bull,1,759.0,17
+2022,ferrari,Ferrari,2,554.0,4
+2022,mercedes,Mercedes,3,515.0,1
+2022,alpine,Alpine F1 Team,4,173.0,0
+2022,mclaren,McLaren,5,159.0,0
+2022,alfa,Alfa Romeo,6,55.0,0
+2022,aston_martin,Aston Martin,7,55.0,0
+2022,haas,Haas F1 Team,8,37.0,0
+2022,alphatauri,AlphaTauri,9,35.0,0
+2022,williams,Williams,10,8.0,0
+2023,red_bull,Red Bull,1,860.0,21
+2023,mercedes,Mercedes,2,409.0,0
+2023,ferrari,Ferrari,3,406.0,1
+2023,mclaren,McLaren,4,302.0,0
+2023,aston_martin,Aston Martin,5,280.0,0
+2023,alpine,Alpine F1 Team,6,120.0,0
+2023,williams,Williams,7,28.0,0
+2023,alphatauri,AlphaTauri,8,25.0,0
+2023,alfa,Alfa Romeo,9,16.0,0
+2023,haas,Haas F1 Team,10,12.0,0
+2024,mclaren,McLaren,1,666.0,6
+2024,ferrari,Ferrari,2,652.0,5
+2024,red_bull,Red Bull,3,589.0,9
+2024,mercedes,Mercedes,4,468.0,4
+2024,aston_martin,Aston Martin,5,94.0,0
+2024,alpine,Alpine F1 Team,6,65.0,0
+2024,haas,Haas F1 Team,7,58.0,0
+2024,rb,RB F1 Team,8,46.0,0
+2024,williams,Williams,9,17.0,0
+2024,sauber,Sauber,10,4.0,0
+2025,mclaren,McLaren,1,417.0,8
+2025,ferrari,Ferrari,2,210.0,0
+2025,mercedes,Mercedes,3,209.0,1
+2025,red_bull,Red Bull,4,162.0,2
+2025,williams,Williams,5,55.0,0
+2025,rb,RB F1 Team,6,36.0,0
+2025,haas,Haas F1 Team,7,29.0,0
+2025,aston_martin,Aston Martin,8,28.0,0
+2025,sauber,Sauber,9,26.0,0
+2025,alpine,Alpine F1 Team,10,11.0,0
