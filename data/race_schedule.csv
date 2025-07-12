@@ -1,93 +1,93 @@
 year,round,race_name,circuit_id,circuit_name,country,date,time
-2022,1,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2022-03-20,15:00:00Z
-2022,2,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2022-03-27,17:00:00Z
-2022,3,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2022-04-10,05:00:00Z
-2022,4,Emilia Romagna Grand Prix,imola,Autodromo Enzo e Dino Ferrari,Italy,2022-04-24,13:00:00Z
-2022,5,Miami Grand Prix,miami,Miami International Autodrome,USA,2022-05-08,19:30:00Z
-2022,6,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2022-05-22,13:00:00Z
-2022,7,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2022-05-29,13:00:00Z
-2022,8,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2022-06-12,11:00:00Z
-2022,9,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2022-06-19,18:00:00Z
-2022,10,British Grand Prix,silverstone,Silverstone Circuit,UK,2022-07-03,14:00:00Z
-2022,11,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2022-07-10,13:00:00Z
-2022,12,French Grand Prix,ricard,Circuit Paul Ricard,France,2022-07-24,13:00:00Z
-2022,13,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2022-07-31,13:00:00Z
-2022,14,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2022-08-28,13:00:00Z
-2022,15,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2022-09-04,13:00:00Z
-2022,16,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2022-09-11,13:00:00Z
-2022,17,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2022-10-02,12:00:00Z
-2022,18,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2022-10-09,05:00:00Z
-2022,19,United States Grand Prix,americas,Circuit of the Americas,USA,2022-10-23,19:00:00Z
-2022,20,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2022-10-30,20:00:00Z
-2022,21,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2022-11-13,18:00:00Z
-2022,22,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2022-11-20,13:00:00Z
-2023,1,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2023-03-05,15:00:00Z
-2023,2,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2023-03-19,17:00:00Z
-2023,3,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2023-04-02,05:00:00Z
-2023,4,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2023-04-30,11:00:00Z
-2023,5,Miami Grand Prix,miami,Miami International Autodrome,USA,2023-05-07,19:30:00Z
-2023,6,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2023-05-28,13:00:00Z
-2023,7,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2023-06-04,13:00:00Z
-2023,8,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2023-06-18,18:00:00Z
-2023,9,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2023-07-02,13:00:00Z
-2023,10,British Grand Prix,silverstone,Silverstone Circuit,UK,2023-07-09,14:00:00Z
-2023,11,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2023-07-23,13:00:00Z
-2023,12,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2023-07-30,13:00:00Z
-2023,13,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2023-08-27,13:00:00Z
-2023,14,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2023-09-03,13:00:00Z
-2023,15,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2023-09-17,12:00:00Z
-2023,16,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2023-09-24,05:00:00Z
-2023,17,Qatar Grand Prix,losail,Losail International Circuit,Qatar,2023-10-08,17:00:00Z
-2023,18,United States Grand Prix,americas,Circuit of the Americas,USA,2023-10-22,19:00:00Z
-2023,19,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2023-10-29,20:00:00Z
-2023,20,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2023-11-05,17:00:00Z
-2023,21,Las Vegas Grand Prix,vegas,Las Vegas Strip Street Circuit,USA,2023-11-19,06:00:00Z
-2023,22,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2023-11-26,13:00:00Z
-2024,1,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2024-03-02,15:00:00Z
-2024,2,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2024-03-09,17:00:00Z
-2024,3,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2024-03-24,04:00:00Z
-2024,4,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2024-04-07,05:00:00Z
-2024,5,Chinese Grand Prix,shanghai,Shanghai International Circuit,China,2024-04-21,07:00:00Z
-2024,6,Miami Grand Prix,miami,Miami International Autodrome,USA,2024-05-05,20:00:00Z
-2024,7,Emilia Romagna Grand Prix,imola,Autodromo Enzo e Dino Ferrari,Italy,2024-05-19,13:00:00Z
-2024,8,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2024-05-26,13:00:00Z
-2024,9,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2024-06-09,18:00:00Z
-2024,10,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2024-06-23,13:00:00Z
-2024,11,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2024-06-30,13:00:00Z
-2024,12,British Grand Prix,silverstone,Silverstone Circuit,UK,2024-07-07,14:00:00Z
-2024,13,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2024-07-21,13:00:00Z
-2024,14,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2024-07-28,13:00:00Z
-2024,15,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2024-08-25,13:00:00Z
-2024,16,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2024-09-01,13:00:00Z
-2024,17,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2024-09-15,11:00:00Z
-2024,18,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2024-09-22,12:00:00Z
-2024,19,United States Grand Prix,americas,Circuit of the Americas,USA,2024-10-20,19:00:00Z
-2024,20,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2024-10-27,20:00:00Z
-2024,21,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2024-11-03,17:00:00Z
-2024,22,Las Vegas Grand Prix,vegas,Las Vegas Strip Street Circuit,USA,2024-11-23,06:00:00Z
-2024,23,Qatar Grand Prix,losail,Losail International Circuit,Qatar,2024-12-01,16:00:00Z
-2024,24,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2024-12-08,13:00:00Z
-2025,1,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2025-03-16,04:00:00Z
-2025,2,Chinese Grand Prix,shanghai,Shanghai International Circuit,China,2025-03-23,07:00:00Z
-2025,3,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2025-04-06,05:00:00Z
-2025,4,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2025-04-13,15:00:00Z
-2025,5,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2025-04-20,17:00:00Z
-2025,6,Miami Grand Prix,miami,Miami International Autodrome,USA,2025-05-04,20:00:00Z
-2025,7,Emilia Romagna Grand Prix,imola,Autodromo Enzo e Dino Ferrari,Italy,2025-05-18,13:00:00Z
-2025,8,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2025-05-25,13:00:00Z
-2025,9,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2025-06-01,13:00:00Z
-2025,10,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2025-06-15,18:00:00Z
-2025,11,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2025-06-29,13:00:00Z
-2025,12,British Grand Prix,silverstone,Silverstone Circuit,UK,2025-07-06,14:00:00Z
-2025,13,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2025-07-27,13:00:00Z
-2025,14,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2025-08-03,13:00:00Z
-2025,15,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2025-08-31,13:00:00Z
-2025,16,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2025-09-07,13:00:00Z
-2025,17,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2025-09-21,11:00:00Z
-2025,18,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2025-10-05,12:00:00Z
-2025,19,United States Grand Prix,americas,Circuit of the Americas,USA,2025-10-19,19:00:00Z
-2025,20,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2025-10-26,20:00:00Z
-2025,21,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2025-11-09,17:00:00Z
-2025,22,Las Vegas Grand Prix,vegas,Las Vegas Strip Street Circuit,USA,2025-11-23,04:00:00Z
-2025,23,Qatar Grand Prix,losail,Losail International Circuit,Qatar,2025-11-30,16:00:00Z
-2025,24,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2025-12-07,13:00:00Z
+2022,1,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2022-03-20,2022-03-20 15:00:00
+2022,2,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2022-03-27,2022-03-27 17:00:00
+2022,3,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2022-04-10,2022-04-10 05:00:00
+2022,4,Emilia Romagna Grand Prix,imola,Autodromo Enzo e Dino Ferrari,Italy,2022-04-24,2022-04-24 13:00:00
+2022,5,Miami Grand Prix,miami,Miami International Autodrome,USA,2022-05-08,2022-05-08 19:30:00
+2022,6,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2022-05-22,2022-05-22 13:00:00
+2022,7,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2022-05-29,2022-05-29 13:00:00
+2022,8,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2022-06-12,2022-06-12 11:00:00
+2022,9,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2022-06-19,2022-06-19 18:00:00
+2022,10,British Grand Prix,silverstone,Silverstone Circuit,UK,2022-07-03,2022-07-03 14:00:00
+2022,11,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2022-07-10,2022-07-10 13:00:00
+2022,12,French Grand Prix,ricard,Circuit Paul Ricard,France,2022-07-24,2022-07-24 13:00:00
+2022,13,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2022-07-31,2022-07-31 13:00:00
+2022,14,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2022-08-28,2022-08-28 13:00:00
+2022,15,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2022-09-04,2022-09-04 13:00:00
+2022,16,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2022-09-11,2022-09-11 13:00:00
+2022,17,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2022-10-02,2022-10-02 12:00:00
+2022,18,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2022-10-09,2022-10-09 05:00:00
+2022,19,United States Grand Prix,americas,Circuit of the Americas,USA,2022-10-23,2022-10-23 19:00:00
+2022,20,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2022-10-30,2022-10-30 20:00:00
+2022,21,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2022-11-13,2022-11-13 18:00:00
+2022,22,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2022-11-20,2022-11-20 13:00:00
+2023,1,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2023-03-05,2023-03-05 15:00:00
+2023,2,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2023-03-19,2023-03-19 17:00:00
+2023,3,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2023-04-02,2023-04-02 05:00:00
+2023,4,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2023-04-30,2023-04-30 11:00:00
+2023,5,Miami Grand Prix,miami,Miami International Autodrome,USA,2023-05-07,2023-05-07 19:30:00
+2023,6,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2023-05-28,2023-05-28 13:00:00
+2023,7,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2023-06-04,2023-06-04 13:00:00
+2023,8,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2023-06-18,2023-06-18 18:00:00
+2023,9,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2023-07-02,2023-07-02 13:00:00
+2023,10,British Grand Prix,silverstone,Silverstone Circuit,UK,2023-07-09,2023-07-09 14:00:00
+2023,11,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2023-07-23,2023-07-23 13:00:00
+2023,12,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2023-07-30,2023-07-30 13:00:00
+2023,13,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2023-08-27,2023-08-27 13:00:00
+2023,14,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2023-09-03,2023-09-03 13:00:00
+2023,15,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2023-09-17,2023-09-17 12:00:00
+2023,16,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2023-09-24,2023-09-24 05:00:00
+2023,17,Qatar Grand Prix,losail,Losail International Circuit,Qatar,2023-10-08,2023-10-08 17:00:00
+2023,18,United States Grand Prix,americas,Circuit of the Americas,USA,2023-10-22,2023-10-22 19:00:00
+2023,19,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2023-10-29,2023-10-29 20:00:00
+2023,20,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2023-11-05,2023-11-05 17:00:00
+2023,21,Las Vegas Grand Prix,vegas,Las Vegas Strip Street Circuit,USA,2023-11-19,2023-11-19 06:00:00
+2023,22,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2023-11-26,2023-11-26 13:00:00
+2024,1,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2024-03-02,2024-03-02 15:00:00
+2024,2,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2024-03-09,2024-03-09 17:00:00
+2024,3,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2024-03-24,2024-03-24 04:00:00
+2024,4,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2024-04-07,2024-04-07 05:00:00
+2024,5,Chinese Grand Prix,shanghai,Shanghai International Circuit,China,2024-04-21,2024-04-21 07:00:00
+2024,6,Miami Grand Prix,miami,Miami International Autodrome,USA,2024-05-05,2024-05-05 20:00:00
+2024,7,Emilia Romagna Grand Prix,imola,Autodromo Enzo e Dino Ferrari,Italy,2024-05-19,2024-05-19 13:00:00
+2024,8,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2024-05-26,2024-05-26 13:00:00
+2024,9,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2024-06-09,2024-06-09 18:00:00
+2024,10,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2024-06-23,2024-06-23 13:00:00
+2024,11,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2024-06-30,2024-06-30 13:00:00
+2024,12,British Grand Prix,silverstone,Silverstone Circuit,UK,2024-07-07,2024-07-07 14:00:00
+2024,13,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2024-07-21,2024-07-21 13:00:00
+2024,14,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2024-07-28,2024-07-28 13:00:00
+2024,15,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2024-08-25,2024-08-25 13:00:00
+2024,16,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2024-09-01,2024-09-01 13:00:00
+2024,17,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2024-09-15,2024-09-15 11:00:00
+2024,18,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2024-09-22,2024-09-22 12:00:00
+2024,19,United States Grand Prix,americas,Circuit of the Americas,USA,2024-10-20,2024-10-20 19:00:00
+2024,20,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2024-10-27,2024-10-27 20:00:00
+2024,21,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2024-11-03,2024-11-03 17:00:00
+2024,22,Las Vegas Grand Prix,vegas,Las Vegas Strip Street Circuit,USA,2024-11-23,2024-11-23 06:00:00
+2024,23,Qatar Grand Prix,losail,Losail International Circuit,Qatar,2024-12-01,2024-12-01 16:00:00
+2024,24,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2024-12-08,2024-12-08 13:00:00
+2025,1,Australian Grand Prix,albert_park,Albert Park Grand Prix Circuit,Australia,2025-03-16,2025-03-16 04:00:00
+2025,2,Chinese Grand Prix,shanghai,Shanghai International Circuit,China,2025-03-23,2025-03-23 07:00:00
+2025,3,Japanese Grand Prix,suzuka,Suzuka Circuit,Japan,2025-04-06,2025-04-06 05:00:00
+2025,4,Bahrain Grand Prix,bahrain,Bahrain International Circuit,Bahrain,2025-04-13,2025-04-13 15:00:00
+2025,5,Saudi Arabian Grand Prix,jeddah,Jeddah Corniche Circuit,Saudi Arabia,2025-04-20,2025-04-20 17:00:00
+2025,6,Miami Grand Prix,miami,Miami International Autodrome,USA,2025-05-04,2025-05-04 20:00:00
+2025,7,Emilia Romagna Grand Prix,imola,Autodromo Enzo e Dino Ferrari,Italy,2025-05-18,2025-05-18 13:00:00
+2025,8,Monaco Grand Prix,monaco,Circuit de Monaco,Monaco,2025-05-25,2025-05-25 13:00:00
+2025,9,Spanish Grand Prix,catalunya,Circuit de Barcelona-Catalunya,Spain,2025-06-01,2025-06-01 13:00:00
+2025,10,Canadian Grand Prix,villeneuve,Circuit Gilles Villeneuve,Canada,2025-06-15,2025-06-15 18:00:00
+2025,11,Austrian Grand Prix,red_bull_ring,Red Bull Ring,Austria,2025-06-29,2025-06-29 13:00:00
+2025,12,British Grand Prix,silverstone,Silverstone Circuit,UK,2025-07-06,2025-07-06 14:00:00
+2025,13,Belgian Grand Prix,spa,Circuit de Spa-Francorchamps,Belgium,2025-07-27,2025-07-27 13:00:00
+2025,14,Hungarian Grand Prix,hungaroring,Hungaroring,Hungary,2025-08-03,2025-08-03 13:00:00
+2025,15,Dutch Grand Prix,zandvoort,Circuit Park Zandvoort,Netherlands,2025-08-31,2025-08-31 13:00:00
+2025,16,Italian Grand Prix,monza,Autodromo Nazionale di Monza,Italy,2025-09-07,2025-09-07 13:00:00
+2025,17,Azerbaijan Grand Prix,baku,Baku City Circuit,Azerbaijan,2025-09-21,2025-09-21 11:00:00
+2025,18,Singapore Grand Prix,marina_bay,Marina Bay Street Circuit,Singapore,2025-10-05,2025-10-05 12:00:00
+2025,19,United States Grand Prix,americas,Circuit of the Americas,USA,2025-10-19,2025-10-19 19:00:00
+2025,20,Mexico City Grand Prix,rodriguez,Autódromo Hermanos Rodríguez,Mexico,2025-10-26,2025-10-26 20:00:00
+2025,21,São Paulo Grand Prix,interlagos,Autódromo José Carlos Pace,Brazil,2025-11-09,2025-11-09 17:00:00
+2025,22,Las Vegas Grand Prix,vegas,Las Vegas Strip Street Circuit,USA,2025-11-23,2025-11-23 04:00:00
+2025,23,Qatar Grand Prix,losail,Losail International Circuit,Qatar,2025-11-30,2025-11-30 16:00:00
+2025,24,Abu Dhabi Grand Prix,yas_marina,Yas Marina Circuit,UAE,2025-12-07,2025-12-07 13:00:00

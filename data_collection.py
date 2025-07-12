@@ -35,6 +35,14 @@ class F1DataCollector:
 
             races = []
             for race in data['MRData']['RaceTable']['Races']:
+                race_datetime = None
+                try:
+                    date_str = race['date']
+                    time_str = race.get('time', '00:00:00Z')
+                    race_datetime = datetime.strptime(f"{date_str}T{time_str}", "%Y-%m-%dT%H:%M:%SZ")
+                except:
+                    race_datetime = pd.NaT
+
                 race_info = {
                     'year': year,
                     'round': int(race['round']),
@@ -43,7 +51,7 @@ class F1DataCollector:
                     'circuit_name': race['Circuit']['circuitName'],
                     'country': race['Circuit']['Location']['country'],
                     'date': race['date'],
-                    'time': race.get('time', 'N/A')
+                    'time': race_datetime
                 }
                 races.append(race_info)
 
@@ -93,6 +101,29 @@ class F1DataCollector:
             
             results = []
             for result in data['MRData']['RaceTable']['Races'][0]['Results']:
+                # Time calculations with timedelta
+                time_str = result.get('Time', {}).get('time', None)
+                time_td = None
+                try:
+                    if time_str:
+                        parts = time_str.split(":")
+                        if len(parts) == 2:
+                            mins, secs = int(parts[0]), float(parts[1])
+                            time_td = timedelta(minutes=mins, seconds=secs)
+                except:
+                    time_td = None
+
+                fastest_str = result.get('FastestLap', {}).get('Time', {}).get('time', None)
+                fastest_td = None
+                try:
+                    if fastest_str:
+                        parts = fastest_str.split(":")
+                        if len(parts) == 2:
+                            mins, secs = int(parts[0]), float(parts[1])
+                            fastest_td = timedelta(minutes=mins, seconds=secs)
+                except:
+                    fastest_td = None
+
                 result_info = {
                     'year': year,
                     'round': round_num,
@@ -105,8 +136,10 @@ class F1DataCollector:
                     'points': float(result['points']),
                     'laps': int(result['laps']),
                     'status': result['status'],
-                    'time': result.get('Time', {}).get('time', 'N/A'),
-                    'fastest_lap': result.get('FastestLap', {}).get('Time', {}).get('time', 'N/A')
+                    'time': time_str,
+                    'time_td': time_td,
+                    'fastest_lap_': fastest_str,
+                    'fastest_lap_td': fastest_td
                 }
                 results.append(result_info)
             
@@ -216,14 +249,14 @@ class F1DataCollector:
                     # Rate limiting to cool off API
                     time.sleep(5)
 
-            # Combine all dataframes
-            final_data = {}
-            for key, df_list in all_data.items():
-                if df_list:
-                    final_data[key] = pd.concat(df_list, ignore_index=True)
-                    logger.info(f"Combined {key}: {len(final_data[key])} records")
-                else:
-                    final_data[key] = pd.DataFrame()
+        # Combine all dataframes
+        final_data = {}
+        for key, df_list in all_data.items():
+            if df_list:
+                final_data[key] = pd.concat(df_list, ignore_index=True)
+                logger.info(f"Combined {key}: {len(final_data[key])} records")
+            else:
+                final_data[key] = pd.DataFrame()
         return final_data
         
     # Save collected data into a CSV file(s)

@@ -67,22 +67,22 @@ year,driver_id,driver_name,constructor_id,constructor_name,position,points,wins
 2024,bottas,Valtteri Bottas,sauber,Sauber,22,0.0,0
 2024,sargeant,Logan Sargeant,williams,Williams,23,0.0,0
 2024,doohan,Jack Doohan,alpine,Alpine F1 Team,24,0.0,0
-2025,piastri,Oscar Piastri,mclaren,McLaren,1,216.0,5
-2025,norris,Lando Norris,mclaren,McLaren,2,201.0,3
-2025,max_verstappen,Max Verstappen,red_bull,Red Bull,3,155.0,2
-2025,russell,George Russell,mercedes,Mercedes,4,146.0,1
+2025,piastri,Oscar Piastri,mclaren,McLaren,1,234.0,5
+2025,norris,Lando Norris,mclaren,McLaren,2,226.0,4
+2025,max_verstappen,Max Verstappen,red_bull,Red Bull,3,165.0,2
+2025,russell,George Russell,mercedes,Mercedes,4,147.0,1
 2025,leclerc,Charles Leclerc,ferrari,Ferrari,5,119.0,0
-2025,hamilton,Lewis Hamilton,ferrari,Ferrari,6,91.0,0
+2025,hamilton,Lewis Hamilton,ferrari,Ferrari,6,103.0,0
 2025,antonelli,Andrea Kimi Antonelli,mercedes,Mercedes,7,63.0,0
-2025,albon,Alexander Albon,williams,Williams,8,42.0,0
-2025,ocon,Esteban Ocon,haas,Haas F1 Team,9,23.0,0
-2025,hulkenberg,Nico Hülkenberg,sauber,Sauber,10,22.0,0
+2025,albon,Alexander Albon,williams,Williams,8,46.0,0
+2025,hulkenberg,Nico Hülkenberg,sauber,Sauber,9,37.0,0
+2025,ocon,Esteban Ocon,haas,Haas F1 Team,10,23.0,0
 2025,hadjar,Isack Hadjar,rb,RB F1 Team,11,21.0,0
-2025,stroll,Lance Stroll,aston_martin,Aston Martin,12,14.0,0
-2025,alonso,Fernando Alonso,aston_martin,Aston Martin,13,14.0,0
-2025,sainz,Carlos Sainz,williams,Williams,14,13.0,0
-2025,lawson,Liam Lawson,red_bull,Red Bull,15,12.0,0
-2025,gasly,Pierre Gasly,alpine,Alpine F1 Team,16,11.0,0
+2025,stroll,Lance Stroll,aston_martin,Aston Martin,12,20.0,0
+2025,gasly,Pierre Gasly,alpine,Alpine F1 Team,13,19.0,0
+2025,alonso,Fernando Alonso,aston_martin,Aston Martin,14,16.0,0
+2025,sainz,Carlos Sainz,williams,Williams,15,13.0,0
+2025,lawson,Liam Lawson,red_bull,Red Bull,16,12.0,0
 2025,tsunoda,Yuki Tsunoda,rb,RB F1 Team,17,10.0,0
 2025,bearman,Oliver Bearman,haas,Haas F1 Team,18,6.0,0
 2025,bortoleto,Gabriel Bortoleto,sauber,Sauber,19,4.0,0
