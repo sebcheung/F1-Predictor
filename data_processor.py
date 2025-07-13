@@ -316,6 +316,21 @@ class F1FeatureEngineer:
         # Fill any missing value (if any)
         final_features = final_features.fillna(0)
 
+        # Clean up merge conflicts. If columns like race_points_x and race_points_y exist, choose _x and drop _y
+        columns_to_fix = ["race_points", "race_position", "race_win", "race_podium"]
+
+        for col in columns_to_fix:
+            if f"{col}_x" in final_features.columns and f"{col}_y" in final_features.columns:
+                final_features[col] = final_features[f"{col}_x"]
+                final_features.drop([f"{col}_x", f"{col}_y"], axis=1, inplace=True)
+            elif f"{col}_x" in final_features.columns:
+                final_features.rename(columns={f"{col}_x": col}, inplace=True)
+            elif f"{col}_y" in final_features.columns:
+                final_features.rename(columns={f"{col}_y": col}, inplace=True)
+        if "circuit_id_x" in final_features.columns and "circuit_id_y" in final_features.columns:
+            final_features["circuit_id"] = final_features["circuit_id_x"]
+            final_features.drop(["circuit_id_x", "circuit_id_y"], axis=1, inplace=True)
+
         print(f"Final dataset shape: {final_features.shape}")
         print(f"Features created: {final_features.columns.tolist()}")
         return final_features
