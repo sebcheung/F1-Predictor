@@ -25,8 +25,8 @@ class F1LLMExplainer:
     def query_driver_performance(self, driver_name: str, circuit_name: str):
         df = self.features
         match = df[
-            (df["driver_name"].str.lower() == driver_name.lower()) &
-            (df["circuit_name"].str.lower() == circuit_name.lower())
+            (df["driver_name"].str.lower().str.contains(driver.lower())) &
+            (df["circuit_name"].str.lower().str.contains(circuit_name.lower()))
         ]
         print(f"Found {len(match)} rows for {driver_name} at {circuit_name}")
         return match
@@ -48,7 +48,7 @@ class F1LLMExplainer:
         if rows.empty:
             return f"No data found for {driver} at {circuit}"
 
-        avg_points = rows['race_points_finish'].mean()
+        avg_points = rows['race_points'].mean()
         podiums = rows['race_podium'].sum()
         wins = rows['race_win'].sum()
         starts = len(rows)

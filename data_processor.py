@@ -37,6 +37,9 @@ class F1FeatureEngineer:
         race_results = race_results.sort_values(['year', 'round'])
         qualifying_results = qualifying_results.sort_values(['year', 'round'])
 
+        # Consistent comparisons with type checks on "position"
+        race_results["position"] = race_results["position"].astype(str).str.strip()
+
         driver_features = []
         drivers = race_results['driver_id'].unique()
 
@@ -84,7 +87,7 @@ class F1FeatureEngineer:
                     if len(recent_races) > 0 
                     else 20,
                     'driver_recent_points': recent_races['points'].sum(),
-                    'driver_recent_wins': len(recent_races[recent_races['position'] == 1]),
+                    'driver_recent_wins': len(recent_races[recent_races['position'] == '1']),
                     'driver_recent_podiums': len(podium(recent_races)),
 
                     # Qualifying stats
@@ -107,7 +110,6 @@ class F1FeatureEngineer:
                 }
 
                 driver_features.append(features)
-        
         return pd.DataFrame(driver_features)
     
     # Create constructor/team features
@@ -216,7 +218,9 @@ class F1FeatureEngineer:
                 }
                 track_features.append(features)
 
-        return pd.DataFrame(track_features)
+        df = pd.DataFrame(track_features)
+        track_features_df = df.drop_duplicates(subset=["year", "round"])
+        return pd.DataFrame(track_features_df)
         
     # Create features based on race context (grid position, weather, etc)
     def create_race_context_features(self, race_results: pd.DataFrame, qualifyiing_results: pd.DataFrame) -> pd.DataFrame:
@@ -262,13 +266,9 @@ class F1FeatureEngineer:
 
                     # Targets
                     'race_position': to_pos(driver_result['position']),
-                    'race_points': driver_result['points'],
                     'position_change': driver_result['grid'] - to_pos(driver_result['position']),
-                    'race_win': 1 if driver_result['position'] == '1' else 0,
-                    'race_podium': 1 if driver_result['position'] in ['1','2','3'] else 0,
                     'points_finish': 1 if driver_result['points'] > 0 else 0,
                 }
-
                 race_context.append(features)
 
         return pd.DataFrame(race_context)
@@ -305,6 +305,9 @@ class F1FeatureEngineer:
             if 'driver_id' in df.columns:
                 df['driver_id'] = df['driver_id'].astype(str)
 
+        # Collapse all duplicates per driver/race
+        race_context = race_context.groupby(['year', 'round', 'driver_id'], as_index=False).mean(numeric_only=True)
+        
         # Merge all of the features
         print("Merging all features...")
         final_features = (driver_features
@@ -316,37 +319,48 @@ class F1FeatureEngineer:
         # Fill any missing value (if any)
         final_features = final_features.fillna(0)
 
-        # Clean up merge conflicts. If columns like race_points_x and race_points_y exist, choose _x and drop _y
-        columns_to_fix = ["race_points", "race_position", "race_win", "race_podium"]
+        # Clean up merge conflicts: prefer values from the left-most (driver_features)
+        preferred_columns = ["race_points", "race_position", "race_win", "race_podium"]
 
-        for col in columns_to_fix:
-            if f"{col}_x" in final_features.columns and f"{col}_y" in final_features.columns:
-                final_features[col] = final_features[f"{col}_x"]
-                final_features.drop([f"{col}_x", f"{col}_y"], axis=1, inplace=True)
-            elif f"{col}_x" in final_features.columns:
-                final_features.rename(columns={f"{col}_x": col}, inplace=True)
-            elif f"{col}_y" in final_features.columns:
-                final_features.rename(columns={f"{col}_y": col}, inplace=True)
+        for col in preferred_columns:
+            x_col = f"{col}_x"
+            y_col = f"{col}_y"
+
+            if x_col in final_features.columns and y_col in final_features.columns:
+                # Optional: ensure values are same or log if not
+                mismatched = final_features[x_col] != final_features[y_col]
+                if mismatched.any():
+                    print(f"Warning: {col}_x and {col}_y mismatch on {mismatched.sum()} rows. Using {col}_x.")
+                final_features[col] = final_features[x_col]
+                final_features.drop([x_col, y_col], axis=1, inplace=True)
+
+            elif x_col in final_features.columns:
+                final_features.rename(columns={x_col: col}, inplace=True)
+
+            elif y_col in final_features.columns:
+                final_features.rename(columns={y_col: col}, inplace=True)
+
+        # Clean circuit_id
         if "circuit_id_x" in final_features.columns and "circuit_id_y" in final_features.columns:
             final_features["circuit_id"] = final_features["circuit_id_x"]
             final_features.drop(["circuit_id_x", "circuit_id_y"], axis=1, inplace=True)
+        elif "circuit_id_x" in final_features.columns:
+            final_features.rename(columns={"circuit_id_x": "circuit_id"}, inplace=True)
+        elif "circuit_id_y" in final_features.columns:
+            final_features.rename(columns={"circuit_id_y": "circuit_id"}, inplace=True)
 
-        print(f"Final dataset shape: {final_features.shape}")
-        print(f"Features created: {final_features.columns.tolist()}")
         return final_features
     
     # Prepare training and validation datasets
     def prepare_datasets(self, features_df: pd.DataFrame) -> Dict[str, pd.DataFrame | list]:
-        # Resolve any _x/_y conflicts generated during merge
-        cols_rename = {}
-        for col in features_df.columns:
-            if col.endswith("_x"):
-                cols_rename[col] = col[:-2]  # drop _x
-        features_df.rename(columns=cols_rename, inplace=True)
-        features_df.drop(columns=[c for c in features_df.columns if c.endswith("_y")], inplace=True)
+        # Ensure necessary target columns exist
+        required_targets = ['race_position', 'race_points']
+        for col in required_targets:
+            if col not in features_df.columns:
+                raise ValueError(f"Missing required target column: {col}")
         
         # Clean - remove rows with missing target values
-        features_df = features_df.dropna(subset=['race_position', 'race_points'])
+        features_df = features_df.dropna(subset=required_targets)
 
         # Feature selection for our ML Model
         feature_cols = [
@@ -372,9 +386,7 @@ class F1FeatureEngineer:
             'field_size', 'points_available'
         ]
 
-        target_cols = [
-            'race_points', 'race_win', 'race_podium', 'points_finish'
-        ]
+        target_cols = ['race_points', 'race_win', 'race_podium', 'points_finish']
 
         # Create feature matrix
         X = features_df[feature_cols].copy()
@@ -397,11 +409,6 @@ class F1FeatureEngineer:
             "metadata_train": meta_data[train_mask],
             "metadata_val": meta_data[~train_mask],
         }
-
-        print(f"Training set: {split['X_train'].shape}")
-        print(f"Validation set: {split['X_val'].shape}")
-        print(f"Features: {X.columns.tolist()}")
-
         return split
 
 if __name__ == "__main__":
@@ -428,7 +435,5 @@ if __name__ == "__main__":
         ml_data['y_val'].to_csv('data/y_val.csv', index=False)
         
         print("ML datasets saved!")
-        print(f"Training features shape: {ml_data['X_train'].shape}")
-        print(f"Validation features shape: {ml_data['X_val'].shape}")
     else:
         print("No data found. Please run the data collector first.")
