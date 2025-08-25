@@ -50,16 +50,12 @@ python data_collection.py
 ```
 This fetches F1 data from the Jolpi API (successor of Ergast API) that consists of race results, qualifying results, standings, schedules, etc. It will save them as CSVs.
 
----
-
 ### Step 2: Feature Engineering
 Run:
 ```bash
 python data_processor.py
 ```
 This builds features for drivers, constructors, circuits, and race context. It will merge all the datasets into one while handling duplicates, missing values, and merge conflicts.
-
----
 
 ### Step 3: Model Training
 Run:
@@ -69,8 +65,6 @@ python model_trainer.py
 This trains on XGBoost model to predict the following:
 - Race points, race wins, race podiums, and point finishes
 and prints evaluation metrics.
-
----
 
 ### Step 4: LLM Insights (Optional)
 If you have an OpenAI key, run:
