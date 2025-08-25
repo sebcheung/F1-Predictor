@@ -4,7 +4,7 @@ This project combines traditional machine learning (XGBoost) with Large Language
 
 ---
 
-## Features
+## 🚀 Features
 - ML model with XGBoost trained on real live F1 data
 - Makes predictions:
   - Race points
@@ -15,7 +15,7 @@ This project combines traditional machine learning (XGBoost) with Large Language
 
 ---
 
-## Setup
+## ⚡ Setup
 ### 1. Git Clone Repo
 ```bash
 git clone https://github.com/yourusername/F1-Predictor.git
@@ -42,7 +42,7 @@ If you want LLM explanations:
      ```
 ---
 
-## How It Works
+## 🔎 How It Works
 ### Step 1: Data Collection
 Run:
 ```bash
